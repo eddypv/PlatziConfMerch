@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPluguin = require('mini-css-extract-plugin');
+
 module.exports = {
   entry: './src/index.js', // punto de entrada
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath:'/' // para utilizar en react-router-dom
   },
   resolve: {
     // que elementos que va escuchar
@@ -50,5 +52,6 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3005,
+    historyApiFallback:true // para utilizar en react-router-dom
   },
 };
