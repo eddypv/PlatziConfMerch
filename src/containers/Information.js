@@ -1,7 +1,6 @@
 /* eslint-disable import/imports-first */
 import React, {useContext, useRef} from 'react'
 import '../styles/components/Information.css'
-import {Link} from 'react-router-dom'
 import AppContext from '../context/AppContext'
 
 
