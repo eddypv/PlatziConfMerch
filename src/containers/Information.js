@@ -1,5 +1,7 @@
+/* eslint-disable import/imports-first */
 import React from 'react'
 import '../styles/components/Information.css'
+import {Link} from 'react-router-dom'
 
 const Information = () => (
         <div className="Information">
@@ -25,7 +27,7 @@ const Information = () => (
                         Regresar
                     </div>
                     <div className="Information-next">
-                        Pagar
+                        <Link to="/checkout/payment">Pagar</Link>
                     </div>
                 </div>
             </div>
