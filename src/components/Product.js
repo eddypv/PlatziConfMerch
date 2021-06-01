@@ -8,7 +8,7 @@ const Product = ({product, handleAddToCart}) =>(
                 <span>$ {` ${product.price}`}</span>
                 <p>{product.description}</p>
             </div>
-            <button type="button" onClick={ e => handleAddToCart(product)}>Comprar</button>
+            <button type="button" onClick={ () => handleAddToCart(product)}>Comprar</button>
         </div>
     )
 export default Product
